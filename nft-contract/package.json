@@ -1,0 +1,22 @@
+{
+  "name": "nft-contract",
+  "version": "1.0.0",
+  "license": "(MIT AND Apache-2.0)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "build": "yarn build:nft",
+    "build:nft": "near-sdk-js build src/index.ts build/nft.wasm",
+    "test": "ava"
+  },
+  "dependencies": {
+    "near-sdk-js": "0.4.0-5",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "ava": "^4.3.1",
+    "near-workspaces": "^3.1.0"
+  }
+}
