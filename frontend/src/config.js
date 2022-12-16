@@ -1,5 +1,5 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'sordgom_cf_1.testnet'
-const NFT_CONTRACT_NAME = process.env.NFT_CONTRACT_NAME || 'sordgom_cf_nft_1.testnet'
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'sordgom_cf.testnet'
+const NFT_CONTRACT_NAME = process.env.NFT_CONTRACT_NAME || 'sordgom_cf_nft.testnet'
 
 function getConfig(env) {
   switch (env) {
